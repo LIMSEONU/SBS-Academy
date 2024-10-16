@@ -71,4 +71,4 @@
                  
                  1) 언더스코어 넣어서 구분하는 snake_case -> ex) nav_bar, top_menu
                  2) 모든 단어를 대문자로 시작해서 구분 PascalCase
-                 3) 두번째 단어부터 대문자로 시작해서 구분 CamelCase -> 이 방법이 관례
+                 3) 두번째 단어부터 대문자로 시작해서 구분 camelCase -> 이 방법이 관례(암묵적인 룰)
