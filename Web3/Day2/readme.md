@@ -88,3 +88,79 @@
                  let result = a < b ? 'true' : 'false';
 
                  console.log(result);
+
+
+                <조건문>
+                 -주어진 조건에 따라 실행하는 조건문
+                
+                 1) if문
+                 [ 조건이 참 거짓 2개일 때 ]
+                 문법식 => if(조건) {
+                            조건이 참일 때 실행될 코드
+                        } else {
+                            조건이 거짓말일 때 실행될 코드
+                        };
+
+                 [ 조건이 3개 이상일 때 ]
+                 문법식 => if(조건) {
+                            조건이 참일 때 실행될 코드
+                        } else if(조건) {
+                            실행될 코드2
+                        } else if(조건) {
+                            
+                        } else {
+                                                    <= 위에 조건들이 다 만족하지않았을 때 실행되는 코드 작성
+                        };
+
+                 let a = 25;
+                 let b = 40;
+                 
+                 if(a > b){
+                    console.log('true');
+                 } else {
+                    console.log('false');
+                 }
+
+                 ( if문 예시 )
+                 let adult = 20;
+                 let age = prompt('나이를 입력하세요');
+
+                 if(age <= 19){
+                     console.log('미성년자입니다.');
+                 } 
+                 else {
+                     console.log('성인입니다.');
+                 }
+                
+                 let result = adult < age ? '성인입니다' : '미성년자입니다'
+                 20보다 나이가 많냐?            true    :     false
+                 개발자들은 한줄이라도 줄이는게 엄청 큰 일 이기 때문에 삼항 연산자를 이용해 if문을 간단하게 정리할 수 있다.
+
+                 document.write(result);
+
+
+                 2) switch문
+                  - 주어진 케이스 조건에 따라 실행하는 조건문
+
+                 switch(조건) {
+                    case 조건값: 조건이 참일 때 실행문;
+                        break;
+                    case 조건값: 조건이 참일 때 실행문;
+                        break;
+
+                        ...
+
+                    default: 일치하는 조건이 없을 때 실행문
+                 } 
+
+                 let subject = prompt('과목을 선택하세요. 1 - 웹, 2 - 편집, 3 - 드로잉');
+
+                 switch(subject){
+                 case '1': document.write('웹 과목');
+                    break;
+                 case '2': document.write('편집 과목');
+                    break;
+                 case '3': document.write('드로잉 과목');
+                    break;
+                 default: alert('해당 과목은 없습니다');
+             }
