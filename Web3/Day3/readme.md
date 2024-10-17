@@ -70,6 +70,7 @@
                         document.write('*');
                   }
                  }
+  
                  < for문을 이용한 구구단 만들기 >
                  for(let i = 2; i <= 9; i++){
                     document.write(i + '단');
