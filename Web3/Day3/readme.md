@@ -50,12 +50,14 @@
   
                  < 중첩 for문 예시 >
                   => 부모가  한 사이클 돌 때 자녀도 한 사이클을 같이 도는 방식
+  
                  for(let i = 1; i <= 5; i++) {
                     document.write('<h1>' + i + '</h1>') //부모 i를 1~5까지 1씩 증가하면서 출력
                     for(let j = 6; j <= 8; j++){ 
                         document.write(j + '<br/>'); //자녀 j를 6~8까지 1씩 증가하면서 출력
                   }
                  }
+  
                  < for문을 이용한 삼각형 만들기 예제 >
                  for(let i = 0; i < 5; i++){
                     document.write('<br/>');
