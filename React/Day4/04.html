@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            /*
+            function solution(my_string){
+                return my_string.split(' ');
+
+                }
+            // 공백 찾기 문제
+            document.write(solution("i love you"));
+            */
+
+            function solution(myString){
+                return myString.split('x').map(a => a.length);
+            }
+            
+            document.write(solution("oxooxoxxox")+ '<br/>');
+            document.write(solution("xabcxdefxghi"));
+            
+        </script>
+    </body>
+</html>
