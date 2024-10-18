@@ -1,4 +1,4 @@
-- SBS-Academy Web3 JavaScript 반복문
+- SBS-Academy Web3 JavaScript 반복문 (for문, while문)
 
 
                 반목문: 일정한 규칙으로 조건이 만족할 때까지 실행하는 반복문
@@ -83,3 +83,22 @@
                     document.write('<br/>');
                   }
                  }
+  =====================================================================================
+  
+               < while 문 >
+               while(반복조건) {
+                  반복 처리 내용 코드
+               }
+               
+               
+              0 ~ 9까지 출력 ( for문과 while문 반복문 둘 다 돌려돌려서 할줄알아야함!! ) <= while문 예시
+              let myNumber = 0;
+              while(myNumber < 10) {
+                  console.log(myNumber);
+                  myNumber += 1;
+               }
+
+               위 while문을 for문으로 바꿔보기!
+               for(myNumber = 0; myNumber < 10; myNumber++){
+                  console.log(myNumber);
+               }
