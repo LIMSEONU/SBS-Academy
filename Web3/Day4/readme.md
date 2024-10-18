@@ -16,7 +16,8 @@
                     index는 0부터 시작, 배열의 요소에 접근할 때
                      const array1 = [];
                      const array2 = [0, 2, 4]; // 배열 안 요소들이라고함
-                     const array3 = ['bear', 'fox', 'monkey']; // console.log(array3[3]); => 3번째 인덱스 요소가 없기 때문에 undefined라고 뜸
+                     const array3 = ['bear', 'fox', 'monkey']; // console.log(array3[3]); => 3번째 인덱스 요소가 없기 때문에
+                                    undefined라고 뜸
                      const array4 = [1, 'fox', true];
                      const array5 = [['fox', 1, 3], [1, true, 'monkey']];
 
@@ -66,3 +67,129 @@
                      ( 배열+배열 )
                      const result = animals.concat(animal);
                      console.log(result);
+================================================================================
+
+                     < 함수(function) >
+                      하나의 동작, 어떤 목적을 달성하거나 원하는 결과를 도출하기 위한 고드집합
+                      -> 한 번만 쓰는게 아니라 반복적인 동작을 처리하기 위해 사용 -> 같은 이름으로 재사용
+
+                     [ 함수의 이름을 지을때! ]
+                      1) 함수의 기능을 적절하게 표현할 수 있는 이름으로 지어주기
+                      2) 명사보다는 동사로 된 이름을 사용
+                      3) 소문자로 시작하되 여러 단어가 섞인 경우 카멜표기법으로 사용
+                      ex) sayHello, smartPhone
+
+                    [ 함수를 표현하는 방법 ]
+
+                      1) 함수 선언식
+                     function 함수명(매개변수) {
+                     //실행코드
+                     }
+            
+                     함수명(인자, 인수); //함수를 호출!
+
+                     function friedRice(main) {
+                        console.log(`${main} 볶음밥`);
+                     }
+
+                     friedRice('새우');
+                     friedRice('제육');
+
+
+                      2) 함수 표현식
+                     const 함수명 = function() {
+                        //실행 코드
+                     }
+            
+
+                     const friedRice = function(main) {
+                        console.log(`${main} 볶음밥`);
+                     }
+
+                     friedRice('새우');
+
+
+                     const sum = function(a, b) {
+                        console.log(a + b);
+                     }
+
+                     sum(10, 8);
+
+
+                      3) 화살표 함수(arrow function)
+                     const sum = () => {
+                        //실행 코드
+                     }
+
+                     sum();
+
+                     const sum = (a, b) => {
+                        console.log(a + b);
+                     }
+                     sum(10, 4);
+
+
+                     <인자와 매개변수>
+                      - 인자, 인수(arguments) : 함수의 입력값, 매개변수에 할당되는 값
+                      - 매개변수(parameter) :  함수의 입력 변수, 함수의 정의에서 사용되는 변수
+
+            
+                     1) 함수 선언식 예시1
+                     function differ(num1, num2) {
+                        if(num1 === num2) {
+                        console.log(1);
+                     } else {
+                        console.log(-1);
+                      }
+                     }
+
+                     differ(10, 10);
+
+
+                     2) 함수 표현식 예시1
+                     const differ = function(num1, num2) {
+                        if(num1 === num2) {
+                        console.log(1);
+                     } else {
+                        console.log(-1);
+                      }
+                     }
+
+                     differ(11, 11);
+
+
+                     3) 화살표 함수 예시1
+                     const differ = (num1, num2) => {
+                        if(num1 === num2) {
+                        console.log(1);
+                     } else {
+                        console.log(-1);
+                      }
+                     }
+
+                     differ(11, 11);
+            
+
+                     [ 구구단 함수 짜보기 ]
+                     function timesTables() {
+                        for(let i = 2; i < 10; i++) {
+                        document.write(i + '단' + '<br/>');
+                        for(let j = 1; j < 10; j++) {
+                            document.write(`${i} x ${j} = ${i*j} <br/>`);
+                            }
+                        }
+                     }
+
+                     timesTables();
+
+                     [ 화살표 함수로 바꾸기 ]
+                     const timesTables = () => {
+                        for(let i = 2; i < 10; i++) {
+                            document.write(i + '단' + '<br/>');
+                        for(let j = 1; j < 10; j++) {
+                            document.write(`${i} x ${j} = ${i*j} <br/>`);
+                            }
+                        }
+                     } 
+
+                     timesTables();
